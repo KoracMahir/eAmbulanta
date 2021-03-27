@@ -106,13 +106,13 @@ export const ROUTES: RouteInfo[] = [
       { path: "vector", title: "Vector Map", ab: "VM" }
     ] */
   },
- /*  {
-    path: "/widgets",
-    title: "Widgets",
+  {
+    path: "/pages/user",
+    title: "Lijekovi",
     type: "link",
     icontype: "objects_diamond"
   },
-  {
+ /*  {
     path: "/charts",
     title: "Charts",
     type: "link",

@@ -23,8 +23,8 @@
                   <div class="icon icon-primary">
                     <i class="now-ui-icons ui-2_chat-round"></i>
                   </div>
-                  <h3 class="info-title">67</h3>
-                  <h6 class="stats-title">Aktivne ambulante</h6>
+                  <h3 class="info-title">267</h3>
+                  <h6 class="stats-title">testiranih</h6>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@
                     <i class="now-ui-icons users_single-02"></i>
                   </div>
                   <h3 class="info-title"><small></small>260</h3>
-                  <h6 class="stats-title">Broj osobolja</h6>
+                  <h6 class="stats-title">Broj aktivnog osobolja</h6>
                 </div>
               </div>
             </div>
@@ -45,8 +45,8 @@
                   <div class="icon icon-info">
                     <i class="now-ui-icons users_single-02"></i>
                   </div>
-                  <h3 class="info-title">563</h3>
-                  <h6 class="stats-title">Pacijenti</h6>
+                  <h3 class="info-title">2563</h3>
+                  <h6 class="stats-title">Ukupno hospitalizovanih</h6>
                 </div>
               </div>
             </div>
@@ -56,8 +56,8 @@
                   <div class="icon icon-danger">
                     <i class="now-ui-icons objects_support-17"></i>
                   </div>
-                  <h3 class="info-title">143</h3>
-                  <h6 class="stats-title">Poziva na cekanju</h6>
+                  <h3 class="info-title">333</h3>
+                  <h6 class="stats-title">Hitni slučajevi</h6>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
     <div class="col-lg-4 col-md-6">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">Aktivne ambulante</h5>
+          <h5 class="card-category">Broj zaraženih po ambulantama (Prosjek)</h5>
           <h2 class="card-title">67</h2>
           <div class="" ngbDropdown>
             <button
@@ -111,48 +111,48 @@
                     <div class="flag"><img src="../assets/img/hospital.png" /></div>
                   </td>
                   <td>Dom Zdravlja Otoka</td>
-                  <td class="text-right">8:00</td>
-                  <td class="text-right">20:00</td>
+                  <td class="text-right">Zarazeno:</td>
+                  <td class="text-right">100</td>
                 </tr>
                 <tr>
                   <td>
                     <div class="flag"><img src="../assets/img/hospital.png" /></div>
                   </td>
                   <td>Ambulanta Sokolje</td>
-                  <td class="text-right">13:00</td>
-                  <td class="text-right">18:00</td>
+                  <td class="text-right">Zarazeno:</td>
+                  <td class="text-right">40</td>
                 </tr>
                 <tr>
                   <td>
                     <div class="flag"><img src="../assets/img/hospital.png" /></div>
                   </td>
                   <td>Ambulanta porodične medicine</td>
-                  <td class="text-right">8:00</td>
-                  <td class="text-right">13:00</td>
+                  <td class="text-right">Zarazeno:</td>
+                  <td class="text-right">10</td>
                 </tr>
                 <tr>
                   <td>
                     <div class="flag"><img src="../assets/img/hospital.png" /></div>
                   </td>
                   <td>Ambulanta Grbavica I</td>
-                  <td class="text-right">10:00</td>
-                  <td class="text-right">16:00</td>
+                  <td class="text-right">Zarazeno:</td>
+                  <td class="text-right">30</td>
                 </tr>
                 <tr>
                   <td>
                     <div class="flag"><img src="../assets/img/hospital.png" /></div>
                   </td>
                   <td>Područna ambulanta Osjek</td>
-                  <td class="text-right">9:00</td>
-                  <td class="text-right">14:00</td>
+                  <td class="text-right">Zarazeno:</td>
+                  <td class="text-right">0</td>
                 </tr>
                 <tr>
                   <td>
                     <div class="flag"><img src="../assets/img/hospital.png" /></div>
                   </td>
                   <td>Ambulanta Kovačići</td>
-                  <td class="text-right">14:00</td>
-                  <td class="text-right">20:00</td>
+                  <td class="text-right">Zarazeno:</td>
+                  <td class="text-right">120</td>
                 </tr>
               </tbody>
             </table>
@@ -274,8 +274,8 @@
     <div class="col-lg-4 col-md-6">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">Pacijenti u ambulanti</h5>
-          <h2 class="card-title">12</h2>
+          <h5 class="card-category">Vakcinisanih</h5>
+          <h2 class="card-title">120</h2>
         </div>
         <div class="card-body">
           <div class="chart-area">
@@ -291,7 +291,13 @@
               (chartClick)="chartClicked($event)"
             ></canvas>
           </div>
-          <h4 class="card-title text-center">Ambulanta Sokolje</h4>
+          <h4 class="card-title text-center"><input type="text" placeholder="Sarajevo" list="zaraza" style="border: none;"><datalist id="zaraza">
+            <option value="Sarajevo">
+            <option value="Zenica">
+            <option value="Mostar">
+            <option value="Banja Luka">
+            <option value="Tuzla">
+          </datalist> </h4>
           <div class="table-full-width table-responsive">
             <table class="table">
               <tbody>
@@ -299,11 +305,7 @@
                   <td>
                     <div class="form-check">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          checked
-                        />
+                        
                         <span class="form-check-sign"></span>
                       </label>
                     </div>
@@ -314,7 +316,7 @@
                     </div>
                   </td>
                   <td class="text-left">
-                    Pacijent 1 - Uputnica
+                    ID: #33213123 (Pozitivno)
                   </td>
                   <td class="td-actions text-right">
                     <button
@@ -341,7 +343,7 @@
                   <td>
                     <div class="form-check">
                       <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" />
+                        
                         <span class="form-check-sign"></span>
                       </label>
                     </div>
@@ -352,7 +354,7 @@
                     </div>
                   </td>
                   <td class="text-left">
-                    Pacijent 2 - Pregled
+                    ID: #34444423 (Pozitivno)
                   </td>
                   <td class="td-actions text-right">
                     <button
@@ -379,11 +381,7 @@
                   <td>
                     <div class="form-check">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          checked
-                        />
+                        
                         <span class="form-check-sign"></span>
                       </label>
                     </div>
@@ -394,7 +392,7 @@
                     </div>
                   </td>
                   <td class="text-left">
-                    Pacijent 3 - Covid test
+                    ID: #3656523 (Negativno)
                   </td>
                   <td class="td-actions text-right">
                     <button
@@ -417,10 +415,12 @@
                     </button>
                   </td>
                 </tr>
+                
               </tbody>
             </table>
           </div>
         </div>
+        <input type="text" placeholder="Provjerite vaš ID" style="margin-left: 70px;padding: 5px 30px 5px 80px;border: none; border-bottom: solid 1.5px #007bff;">
         <div class="card-footer">
           <div class="stats">
             <i class="now-ui-icons ui-2_time-alarm"></i> Zadnjih podaci
