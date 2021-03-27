@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, AfterViewInit, ViewChild, ElementRef} from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from "ngx-toastr";
 
 @Component({
   selector: "app-wizard",
@@ -168,5 +169,9 @@ export class WizardComponent implements OnInit, OnDestroy, AfterViewInit {
       transform:
         "translate3d(" + move_distance + "px, " + vertical_level + "px, 0)"
     };
+  }
+  constructor(private toastr: ToastrService){}
+  showToatr(){
+    this.toastr.success('Some messages' , 'tittle')
   }
 }
