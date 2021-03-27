@@ -26,7 +26,7 @@ export class WizardComponent implements OnInit, OnDestroy, AfterViewInit {
 
   private width: any = 100 / 3 + "%";
   private movingTabStyle = {width: "0px", transform: "translate3d(0px, 0px, 0px)"};
-  private movingTabHTML = `<i class="now-ui-icons users_circle-08"></i> About`;
+  private movingTabHTML = `<i class="now-ui-icons users_circle-08"></i> O meni`;
   private currentIndex = 0;
   private isValid = false;
   private enters = 0;
@@ -122,15 +122,15 @@ export class WizardComponent implements OnInit, OnDestroy, AfterViewInit {
     this.currentIndex = index;
     switch(index) {
        case 0: {
-          this.movingTabHTML=`<i class="now-ui-icons users_circle-08"></i> About`;
+          this.movingTabHTML=`<i class="now-ui-icons users_circle-08"></i> O meni`;
           break;
        }
        case 1: {
-          this.movingTabHTML=`<i class="now-ui-icons ui-1_settings-gear-63"></i>Account`;
+          this.movingTabHTML=`<i class="now-ui-icons ui-1_settings-gear-63"></i>Problem`;
           break;
        }
        case 2: {
-          this.movingTabHTML=`<i class="now-ui-icons ui-1_email-85"></i>Address`;
+          this.movingTabHTML=`<i class="now-ui-icons ui-1_email-85"></i>Opis`;
           break;
        }
        default: {

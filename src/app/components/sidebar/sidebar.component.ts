@@ -27,27 +27,27 @@ export interface ChildrenItems {
 export const ROUTES: RouteInfo[] = [
   {
     path: "/dashboard",
-    title: "Dashboard",
+    title: "Statistika",
     type: "link",
     icontype: "design_app"
   },
   {
-    path: "/pages",
-    title: "Pages",
-    type: "sub",
+    path: "/pages/timeline",
+    title: "Preporuke Doktora",
+    type: "link",
     icontype: "design_image",
     collapse: "pages",
     isCollapsed: true,
-    children: [
-      { path: "pricing", title: "Pricing Page", ab: "PP" },
+   /*  children: [
+      //{ path: "pricing", title: "Pricing Page", ab: "PP" },
       { path: "timeline", title: "Timeline Page", ab: "TP" },
-      { path: "login", title: "Login Page", ab: "LP" },
-      { path: "register", title: "Register Page", ab: "RP" },
-      { path: "lock", title: "Lock Screen Page", ab: "LSP" },
+      //{ path: "login", title: "Login Page", ab: "LP" },
+      //{ path: "register", title: "Register Page", ab: "RP" },
+      //{ path: "lock", title: "Lock Screen Page", ab: "LSP" },
       { path: "user", title: "User Page", ab: "UP" }
-    ]
+    ] */
   },
-  {
+  /* {
     path: "/components",
     title: "Components",
     type: "sub",
@@ -55,45 +55,47 @@ export const ROUTES: RouteInfo[] = [
     collapse: "components",
     isCollapsed: true,
     children: [
-      { path: "buttons", title: "Buttons", ab: "B" },
+      //{ path: "buttons", title: "Buttons", ab: "B" },
       { path: "grid", title: "Grid System", ab: "GS" },
       { path: "panels", title: "Panels", ab: "P" },
-      { path: "sweet-alert", title: "Sweet Alert", ab: "SA" },
-      { path: "notifications", title: "Notifications", ab: "N" },
-      { path: "icons", title: "Icons", ab: "I" },
-      { path: "typography", title: "Typography", ab: "T" }
+      //{ path: "sweet-alert", title: "Sweet Alert", ab: "SA" },
+      //{ path: "notifications", title: "Notifications", ab: "N" },
+      //{ path: "icons", title: "Icons", ab: "I" },
+      //{ path: "typography", title: "Typography", ab: "T" }
     ]
-  },
+  }, */
   {
-    path: "/forms",
-    title: "Forms",
-    type: "sub",
+    path: "/forms/wizard",
+    title: "Naručivanje",
+    type: "link",
     icontype: "files_single-copy-04",
     collapse: "forms",
     isCollapsed: true,
-    children: [
-      { path: "regular", title: "Regular Forms", ab: "RF" },
-      { path: "extended", title: "Extended Forms", ab: "EF" },
-      { path: "validation", title: "Validation Forms", ab: "VF" },
+/*     children: [
+      //{ path: "regular", title: "Regular Forms", ab: "RF" },
+      //{ path: "extended", title: "Extended Forms", ab: "EF" },
+      //{ path: "validation", title: "Validation Forms", ab: "VF" },
       { path: "wizard", title: "Wizard", ab: "W" }
-    ]
+    ] */
   },
   {
-    path: "/tables",
-    title: "Tables",
-    type: "sub",
+    //path: "/tables",
+    path: "/tables/regular",
+    title: "Popunjenost",
+    type: "link",
     icontype: "design_bullet-list-67",
+    
     collapse: "tables",
     isCollapsed: true,
-    children: [
+    /* children: [
       { path: "regular", title: "Regular Tables", ab: "RT" },
-      { path: "extended", title: "Extended Tables", ab: "ET" },
-      { path: "ngx-datatable", title: "Ngx Datatable", ab: "ND" }
-    ]
+      //{ path: "extended", title: "Extended Tables", ab: "ET" },
+      //{ path: "ngx-datatable", title: "Ngx Datatable", ab: "ND" }
+    ] */
   },
   {
     path: "/maps",
-    title: "Maps",
+    title: "Mapa Ambulanti",
     type: "sub",
     icontype: "location_pin",
     collapse: "maps",
