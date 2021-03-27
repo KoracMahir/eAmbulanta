@@ -232,20 +232,22 @@
                   class="btn btn-next btn-fill btn-rose btn-wd"
                   awPreviousStep
                   (click)="validateFirst(1)"
+                  
                 >
                   Nazad
                 </button>
               </div>
               <div class="pull-right">
                 <button
-                  
-                  class="btn btn-next btn-fill btn-rose btn-wd pokazi" (click)="showToatr()"
+                  (click)="showToatr()"
+                  class="btn btn-next btn-fill btn-rose btn-wd pokazi btn-primary" 
                   awNextStep
                   name="submit" type="submit"
                 >
                 Zavrsi
                 </button>
               </div>
+              
               <div class="clearfix"></div>
             </div>
           </aw-wizard-step>

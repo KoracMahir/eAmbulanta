@@ -4,6 +4,7 @@ import { RouterModule } from "@angular/router";
 import { ComponentsModule } from "./components/components.module";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ToastrModule } from "ngx-toastr";
+import { SimpleNotificationsModule} from 'angular2-notifications';
 
 import { AppComponent } from "./app.component";
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
@@ -15,11 +16,16 @@ import { AppRoutes } from "./app.routing";
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   imports: [
     BrowserAnimationsModule,
+    
     RouterModule.forRoot(AppRoutes,{
       useHash: true
     }),
     NgbModule,
-    ToastrModule.forRoot(), // ToastrModule added
+    ToastrModule.forRoot({
+      timeOut:4000,
+      progressBar: true
+    }
+    ), // ToastrModule added
     ComponentsModule
   ],
   providers: [],

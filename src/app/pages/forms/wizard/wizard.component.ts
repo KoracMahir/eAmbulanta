@@ -37,13 +37,13 @@ export class WizardComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild("myWizard") myWizard: any;
   @ViewChild("input") input: any;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private toastr: ToastrService,private formBuilder: FormBuilder ) { }
 
   ngOnInit() {
     this.step1Form = this.formBuilder.group({
       firstName: ['', [Validators.required, Validators.minLength(1)]],
       lastName: ['', [Validators.required, Validators.minLength(1)]],
-      email: ['', [Validators.required, Validators.email, Validators.minLength(1)]],
+      email: ['', [Validators.required, Validators.minLength(1)]],
     });
 
     this.movingTabStyle.width = (this.myWizard.nativeElement.clientWidth -30) / 3 + "px";
@@ -170,8 +170,9 @@ export class WizardComponent implements OnInit, OnDestroy, AfterViewInit {
         "translate3d(" + move_distance + "px, " + vertical_level + "px, 0)"
     };
   }
-  constructor(private toastr: ToastrService){}
+  tittle = 'Uspješno poslano'
   showToatr(){
-    this.toastr.success('Some messages' , 'tittle')
+    this.toastr.info('Nakon pregleda dobit ce te obavijest','USPJEŠNO POSLANO')
+    console.log("bravo")
   }
 }
