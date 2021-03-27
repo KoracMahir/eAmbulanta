@@ -15,7 +15,7 @@ import { MapsRoutes } from "./maps.routing";
     CommonModule,
     RouterModule.forChild(MapsRoutes),
     NguiMapModule.forRoot({
-      apiUrl: "https://maps.google.com/maps/api/js?key=YOUR_KEY_HERE"
+      apiUrl: "https://maps.google.com/maps/api/js?key=AIzaSyBbMVS5eGtXNy-i3ttV0H_0xtaAcKngy7g"
     }),
     ComponentsModule
   ],
