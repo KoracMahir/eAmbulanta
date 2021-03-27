@@ -1,7 +1,7 @@
 <div class="panel-header panel-header-sm"></div>
-<div class="main-content">
+<div class="main-content" >
   <div class="row">
-    <div class="col-md-12">
+    <!-- <div class="col-md-12">
       <div class="card ">
         <div class="card-body ">
           <ngui-map
@@ -13,18 +13,36 @@
           </ngui-map>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="col-md-6">
-      <div class="card ">
-        <div class="card-header "><h4 class="card-title">Regular Map</h4></div>
-        <div class="card-body ">
-          <ngui-map zoom="13" center="40.748817,-73.985428">
-            <marker [position]="[40.748817, -73.985428]"></marker>
+      <div class="card " style="width: 1000px; height:500px" >
+        <div class="card-header "><h4 class="card-title">Mapa ambulanti, bolnica, hitne pomoći</h4></div>
+        <div class="card-body "style="height:500px" >
+          <ngui-map zoom="13" center="43.8416592868506, 18.36051790316406">
+            <marker [position]="[43.8338707,18.3541595]" class="klik"></marker>
+            <marker [position]="[43.8353453,18.349488]" class="klik"></marker>
+            <marker [position]="[43.8393267,18.3364427]" class="klik">
+              <ul style="margin-top: 25px;">
+                <li>Dom zdravlja Saraj Polje</li>
+                <li>Popunjenost: 120/70</li>
+                <li>Najpopunjenije mjesto: COVID-19 odjel</li>
+                <li>Broj testiranih: 1300</li>
+              </ul>
+            </marker>
+            <marker [position]="[43.849412595741384, 18.364349403906374]" class="klik">
+             <!--  <ul style="margin-top: 25px;">
+                <li>Dom zdravlja Otoka</li>
+                <li>Popunjenost: 50/400</li>
+                <li>Najpopunjenije mjesto: Porodicna medicina</li>
+                <li>Broj testiranih: 300</li>
+              </ul> -->
+            </marker>
+            <marker [position]="[43.82482440686145, 18.36407719964822]" class="klik"></marker>
           </ngui-map>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <div class="card ">
         <div class="card-header ">
           <h4 class="card-title">Custom Skin & Settings Map</h4>
@@ -46,6 +64,15 @@
           </ngui-map>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
+<script>
+  var bolnica = document.querySelector(".klik");
+  function show(){
+    for(let i=1; i<bolnice.length; i++){
+      console.log(i)
+    }
+  }
+
+</script>

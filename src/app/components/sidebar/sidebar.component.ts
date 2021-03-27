@@ -94,19 +94,19 @@ export const ROUTES: RouteInfo[] = [
     ] */
   },
   {
-    path: "/maps",
+    path: "/maps/google",
     title: "Mapa Ambulanti",
-    type: "sub",
+    type: "link",
     icontype: "location_pin",
     collapse: "maps",
     isCollapsed: true,
-    children: [
+    /* children: [
       { path: "google", title: "Google Maps", ab: "GM" },
       { path: "fullscreen", title: "Full Screen Map", ab: "FSM" },
       { path: "vector", title: "Vector Map", ab: "VM" }
-    ]
+    ] */
   },
-  {
+ /*  {
     path: "/widgets",
     title: "Widgets",
     type: "link",
@@ -117,10 +117,10 @@ export const ROUTES: RouteInfo[] = [
     title: "Charts",
     type: "link",
     icontype: "business_chart-pie-36"
-  },
+  }, */
   {
     path: "/calendar",
-    title: "Calendar",
+    title: "Termini",
     type: "link",
     icontype: "media-1_album"
   }

@@ -1,7 +1,9 @@
+
 <div class="panel-header panel-header-sm"></div>
 <div class="main-content">
   <div class="col-md-10 mr-auto ml-auto">
     <!--      Wizard container        -->
+    <form  method="POST" action="wizard.component.html">
     <div class="wizard-container" #myWizard>
       <div class="card card-wizard" data-color="red" id="wizardProfile">
         <div class="card-header text-center" data-background-color>
@@ -189,19 +191,19 @@
                   <div class="col-sm-7">
                     <div class="form-group">
                       <label>Opišite bolove</label>
-                      <textarea type="text" class="form-control" ></textarea>
+                      <textarea type="text" class="form-control" name="bolovi"></textarea>
                     </div>
                   </div>
                   <div class="col-sm-3">
                     <div class="form-group">
                       <label>Da li ste i prije imali slicnih problema (DA/NE)</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" name="sameproblems" />
                     </div>
                   </div>
                   <div class="col-sm-5">
                     <div class="form-group">
-                      <label>Vaša doktorica</label>
-                      <input type="text" class="form-control" />
+                      <label>Vaša doktor/ica</label>
+                      <input type="text" class="form-control" name="doktor" />
                     </div>
                   </div>
                   <!-- <div class="col-sm-5">
@@ -236,11 +238,12 @@
               </div>
               <div class="pull-right">
                 <button
-                  type="button"
+                  
                   class="btn btn-next btn-fill btn-rose btn-wd"
                   awNextStep
+                  name="submit" type="submit"
                 >
-                Sljedeće
+                Zavrsi
                 </button>
               </div>
               <div class="clearfix"></div>
@@ -249,6 +252,9 @@
         </aw-wizard>
       </div>
     </div>
-    <!-- wizard container -->
+    <!-- wizard container --></form>
   </div>
+  
 </div>
+
+

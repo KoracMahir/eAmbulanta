@@ -44,48 +44,46 @@ export class CalendarComponent implements OnInit {
       },
       eventLimit: true, // allow "more" link when too many events
       events: [{
-          title: 'All Day Event',
+          title: 'Sistematski',
           start: new Date(y, m, 1),
           className: 'event-default'
         },
         {
-          title: 'Meeting',
+          title: 'Dr.Danijela',
           start: new Date(y, m, d - 1, 10, 30),
           allDay: false,
           className: 'event-green'
         },
         {
-          title: 'Lunch',
+          title: 'Pauza',
           start: new Date(y, m, d + 7, 12, 0),
           end: new Date(y, m, d + 7, 14, 0),
           allDay: false,
           className: 'event-red'
         },
         {
-          title: 'Nud-pro Launch',
+          title: 'Slobodno 13h-14h ',
           start: new Date(y, m, d - 2, 12, 0),
           allDay: true,
           className: 'event-azure'
         },
         {
-          title: 'Birthday Party',
+          title: 'Slobodno',
           start: new Date(y, m, d + 1, 19, 0),
           end: new Date(y, m, d + 1, 22, 30),
           allDay: false,
           className: 'event-azure'
         },
         {
-          title: 'Click for Creative Tim',
+          title: 'Slobodno 14h-14:50h',
           start: new Date(y, m, 21),
           end: new Date(y, m, 22),
-          url: 'http://www.creative-tim.com/',
           className: 'event-orange'
         },
         {
-          title: 'Click for Google',
+          title: 'Pauza 15h',
           start: new Date(y, m, 21),
           end: new Date(y, m, 22),
-          url: 'http://www.creative-tim.com/',
           className: 'event-orange'
         }
       ],
@@ -96,9 +94,9 @@ export class CalendarComponent implements OnInit {
       select: function(info) {
         console.log(info)
         swal({
-          title: 'Create an Event',
+          title: 'Dodajte opciju',
           html: '<div class="form-group">' +
-            '<input class="form-control" placeholder="Event Title" id="input-field">' +
+            '<input class="form-control" placeholder="Vrijeme" id="input-field">' +
             '</div>',
           showCancelButton: true,
           confirmButtonClass: 'btn btn-success',
